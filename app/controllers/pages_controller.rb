@@ -3,11 +3,11 @@ class PagesController < ApplicationController
 	end
 
 	def show
-	@users = Gossip.all
+		@users = Gossip.all
 	end
 
 	def user
-	@id = Gossip.find(params[:id])
+		@id = Gossip.find(params[:id])
 	end
 
 	def bonjour
@@ -26,7 +26,7 @@ class PagesController < ApplicationController
 	end
 
 	def book
-	@books = Gossip.all
+		@books = Gossip.all
 	end
 
 	def update
